@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input, textarea, select {
+            margin: 30px auto;
+            width: 300px;
+            height: 60px;
+            display: block;
+            border: none ;
+            outline: none;
+            border-bottom: 1px solid black;
+            box-shadow: 3px 5px 6px ;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" enctype="multipart/form-data">
+        <select name="" id="selProd">
+          
+        </select>
+        <input type="text" id="nameProd" placeholder="product name">
+        <input type="text" id="priceProd" placeholder="product price">
+        <input type="text" id="discountProd" placeholder="discount">
+        <textarea name="" id="descProd" cols="30" rows="10"></textarea>
+        <img id="img">
+        <input type="file" id="imgProd">
+        <button type="button" id="editBtn">Edit</button>
+    </form>
+    <script src="./editProduct.js"></script>
+</body>
+</html>

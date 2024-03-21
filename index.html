@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      body {
+      }
+      .catTable,
+      .prodTable {
+        width: 60%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background-color: ghostwhite;
+      }
+      td {
+        height: 10px;
+        text-align: center;
+        color: #600505;
+      }
+      .prodTable td {
+        height: 50px;
+      }
+
+      .prodTable td img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-around;
+      }
+      div > a {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 25px;
+        background-color: #260404;
+        color: azure;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      div > a:hover {
+        color: #260404;
+        background-color: azure;
+        box-shadow: 2px 4px 6px #260404 inset;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1px" class="catTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>CATEGORY</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <table border="1px" id="prodTable" class="prodTable" style="width: 90%">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Discount</th>
+          <th>description</th>
+          <th>image</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody id="prodBody"></tbody>
+    </table>
+    <div>
+      <a href="./admin/addCategory.html">ADDCATEGORY</a>
+      <a href="./admin/addProducts.html">ADDPRODUCTS</a>
+      <a href="../public/public.html">PUBLIC</a>
+    </div>
+
+    <script src="./admin/index.js"></script>
+  </body>
+</html>
